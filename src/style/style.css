@@ -1,11 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body {
     background-color: #F9FAFC;
   }
   
 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-top: 7.5rem;
 }
-  
+
+.currencies-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.currencies-container select{
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 125px;
+    /* background: red; */
+}
+
+.input-value-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.input-value{
+    width: 125px;
+    padding: 7px;
+    border-radius: 5px;
+}
+
 .converted-value {
     color: #452B4E;
 }
@@ -13,4 +60,3 @@ body {
 .conversion-precision {
     color: #452B4E;
 }
-a
