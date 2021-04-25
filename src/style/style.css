@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -6,9 +8,11 @@
 
 
 body {
+    font-family: 'Roboto', sans-serif;
     background-color: #F9FAFC;
-  }
+}
   
+
 .container {
     display: flex;
     flex-direction: column;
@@ -17,46 +21,87 @@ body {
     padding-top: 7.5rem;
 }
 
-.currencies-container{
+.container .currencies-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 200px;
     margin-bottom: 10px;
+    width: 340px;
 }
 
 .currencies-container select{
+    width: 150px;
     padding: 10px;
     border-radius: 5px;
+    background: white;
+}
+
+.error-container{
+    width: 400px;
+    height: 50px;
+    background-color: #FFF3CD;
+    border: 2px solid #FFECB5;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.error-container .error-text{
+    display: block;
+    align-self: center;
+    color: #745709; 
+    font-size: 12pt;
+}
+
+.error-container .error-button{
+    font-size: 15pt;
+    background: none;
+    border: none;
+    color: #745709;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .input-container{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 125px;
-    /* background: red; */
+    width: 340px;
 }
 
-.input-value-container{
+.input-container .input-value-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
-    margin-bottom: 5px;
+    width: 340px;
 }
 
-.input-value{
-    width: 125px;
-    padding: 7px;
+.input-value-container .input-value{
+    width: 150px;
+    padding: 10px;
     border-radius: 5px;
+    border: 1px solid #000;
+}
+
+.result-container{
+    width: 270px;
+    margin: 0 10px;
 }
 
 .converted-value {
     color: #452B4E;
+    padding: 4px;
+    margin: auto;
+    font-size: 18pt;
 }
   
 .conversion-precision {
     color: #452B4E;
+    margin-top: 40px;
+    font-size: 16pt;
 }

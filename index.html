@@ -12,11 +12,11 @@
     <div class="container">
 
         <div>
-            <img class="" src="./assets/images/logo.svg" alt="Logo ">
+            <img src="./assets/images/logo.svg" alt="Logo ">
         </div>
 
         <div data-js="currencies-container" class="currencies-container">
-            <div class="">
+            <div>
                 <select data-js="currency-one"></select>
             </div>
 
@@ -25,17 +25,19 @@
             </div>
         </div>
 
+
         <div class="input-container">
             <div class="input-value-container">
                 <input data-js="currency-one-times" type="number" min="1" class="input-value" value="1">
             </div>
 
             <div class="result-container">
-                <p data-js="converted-value"></p>
+                <div>
+                    <p data-js="converted-value" class="converted-value"></p>
+                </div>
             </div>
-
-            <p data-js="conversion-precision"></p>
         </div>
+        <p data-js="conversion-precision" class="conversion-precision"></p>
 
     </div>
 
