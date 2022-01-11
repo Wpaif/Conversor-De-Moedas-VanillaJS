@@ -45,7 +45,7 @@ const state = (() => {
     }
   }
 })()
-const APIKey = '1c14ac96aaf83b4a04951d98'
+const APIKey = CURENT_KEY
 const getUrl = currency => 
   `https://v6.exchangerate-api.com/v6/${APIKey}/latest/${currency}`
 
